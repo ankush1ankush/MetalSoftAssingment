@@ -1,0 +1,20 @@
+.cardContainer1{
+
+ margin-top: 2em;
+
+}
+.css-1v5z4dq-MuiPaper-root-MuiCard-root{
+ border-radius: 1em !important;
+}
+.css-16m3jxf-MuiTypography-root {
+ margin-bottom:0!important ;
+}
+
+@media only screen and (max-width: 1600px) {
+.cardContainer1{
+
+ margin-top: 4em;
+
+}
+  
+}

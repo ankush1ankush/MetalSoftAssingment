@@ -1,38 +1,92 @@
-.App {
+.app{
+  background-color: rgb(188, 188, 188);
+  height: 100%;
+  width: 99%;
+ padding-top:0.2em;
+}
+.progressBar{
+
+  height: 100vh;
+  width: 100%;
+  align-content: center ;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.appContainer{
+  display: flex;
+  
+  height:auto;
+  width: 100%;
+  border-radius: 1em;
+  background-color: #DFDFE3;
+  margin-top: 10px;
+  justify-content: space-evenly;
+  padding-bottom: 1em;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.forcastContainer{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  
+}
+.myWraper{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+
+}
+@media only screen and (min-width: 1250px ) {
+
+    .myWraper{
+      align-items: center;
+    }
+}
+@media only screen and (max-width: 1249px ) {
+
+    .myWraper{
+      align-items: center;
+      flex-direction: row;
+    }
+}
+@media only screen and (max-width: 1000px) {
+   
+  .myWraper{
+      align-items: normal;
+      flex-direction: column;
+    }
+    
+}
+@media only screen and (min-width: 1200px ) {
+
+    .myWraper{
+      align-items: center;
+    }
+}
+@media only screen and (max-width: 800px) {
+
+    .appContainer{
+     height: auto;
+     }
+}
+@media only screen and (max-width: 1250px) {
+   
+   .appContainer{
+      
+      height: auto;
+     }
+    
 }
 
-.App-link {
-  color: #61dafb;
-}
+@media only screen and (max-width: 1600px) {
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    .appContainer{
+      
+      flex-direction: column;
+     }
+    .forcastContainer{
+      flex-direction: row;
+      justify-content: space-around;
+      
+    }
 }
