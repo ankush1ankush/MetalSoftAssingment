@@ -7,7 +7,6 @@ import "./Displaycard.css"
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 function Displaycard({data,idx}) {
-  console.log(data)
   const date = new Date(Date.now()+(idx*24*60*60*1000));
   
   const bull = (
@@ -43,7 +42,7 @@ function Displaycard({data,idx}) {
 
     return (
         <div className="cardContainer">
-            <Box sx={{ minWidth: 140 , maxWidth : 400}}>
+            <Box  sx={{ marginLeft:"auto", marginRight:"auto", minWidth: 140 , maxWidth : 400}}>
                 <Card variant="outlined">{card}</Card>
             </Box>
         </div>

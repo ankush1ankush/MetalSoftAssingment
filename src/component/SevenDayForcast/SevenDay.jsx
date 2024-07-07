@@ -24,7 +24,7 @@ function SevenDay() {
         getData();
     }, [lat, lng , dispatch])
     if (!data) {
-        return;
+        return null;
     }
     return (
         <div className="SevenContainer">

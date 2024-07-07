@@ -19,15 +19,12 @@ function LocationForcast() {
     const date = new Date();
 
     useEffect(() => {
-        console.log(lat);
-        console.log(lng);
         const getData = async () => {
             const config = {
                 method: "GET",
                 url: `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${process.env.REACT_APP_WEATHER_API}&units=metric`
             }
             const results = await axios(config)
-            console.log(results.data)
             setData(results.data);
         }
         getData()
