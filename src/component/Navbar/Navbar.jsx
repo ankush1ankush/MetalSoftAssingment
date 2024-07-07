@@ -11,6 +11,7 @@ function Navbar() {
     const dispatch = useDispatch();
     const handleClick = () => {
           dispatch(sendData(address))
+          setAddress(null);
     }
     const handleChange = () => {
          setAddress(inputRef.current.value)
